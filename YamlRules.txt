@@ -1,0 +1,22 @@
+Extension should be .yaml or .yml
+File should start with --- (three hyphens)
+data should be in key and value pairs(key:value)
+    -India:Delhi
+    If a key has multiple values then key pair should be like follow
+    -fruits:
+        -apple
+        -banana
+        -watermelon
+    If value itself has multiple attributes then we will follow this
+    -students:
+        -name:ravi
+          phone:652545
+          address:
+            area: SR Nagar
+            pincode: 5000047   
+
+        -name:sagar
+          phone:784547
+          address:
+
+Space notation
