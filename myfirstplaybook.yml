@@ -2,8 +2,11 @@
 - hosts: all
   become: yes
   tasks:
-    - name: i want to install git on ansible nodes #apt-get insatll
+    - name: i want to install apache2 on ansible nodes #apt-get insatll
       apt:
         name: apache2
         state: present #prsent-install and absent-uninstall
-
+    - name: I want to start the server
+      service:
+        name: apache2
+        state: started
