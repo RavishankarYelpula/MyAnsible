@@ -5,4 +5,4 @@
     - name: I want to install wget
       apt:
         name: wget2
-        status: present
+        state: present
