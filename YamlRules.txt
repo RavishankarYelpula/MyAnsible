@@ -20,3 +20,7 @@ data should be in key and value pairs(key:value)
           address:
 
 Space notation
+
+Ansible commands
+Ad hoc:- ansible all -i myhosts -m ping
+ansible playbook:- ansible-playbook -i [inventory] [playbook.yml]
