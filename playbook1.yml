@@ -4,5 +4,5 @@
   tasks:
     - name: I want to install wget
       apt:
-        name: wget2
+        name: wget
         state: present
