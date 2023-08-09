@@ -5,5 +5,11 @@
     - name: I want to install wget on only ubuntu nodes
       apt:
         name: wget
-        state: present
+        state: absent
       when: ansible_os_family=="Debian"  
+
+    - name: I want to install webserver on redhad nodes
+      dnf:
+        name: httpd
+        state: present
+      when: ansible_os_family=="RedHat"    
