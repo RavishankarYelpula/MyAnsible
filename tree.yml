@@ -7,6 +7,7 @@
         name: tree
         state: present
     - name: I want uninstall tree
-      apt: tree
-      state: absent
+      apt: 
+        name: tree
+        state: absent
       
