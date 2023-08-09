@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: I want to install wget on only ubuntu nodes
+      apt:
+        name: wget
+        state: present
+      when: ansible_os_family=="Debian"  
