@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: ubuntuserver
   become: yes
   tasks:
     - name: I want to install wget
