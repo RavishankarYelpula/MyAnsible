@@ -5,12 +5,12 @@
   tasks:
     - name: I want to install wget on only ubuntu nodes
       apt:
-        name: "{{webapponubuntu}}"
+        name: "{{javaonubuntu}}"
         state: present
       when: ansible_os_family=="Debian"  
 
     - name: I want to install webserver on redhad nodes
       dnf:
-        name: "{{webapponamazon}}"
+        name: "{{javaonamazon}}"
         state: present
       when: ansible_os_family=="RedHat"    
