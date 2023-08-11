@@ -9,15 +9,15 @@ data should be in key and value pairs(key:value)
         -watermelon
     If value itself has multiple attributes then we will follow this
     -students:
-        -name:ravi
+      -name:ravi
           phone:652545
           address:
-            area: SR Nagar
-            pincode: 5000047   
+          area: SR Nagar
+          pincode: 5000047   
 
-        -name:sagar
-          phone:784547
-          address:
+      -name:sagar
+        phone:784547
+        address:
 
 Space notation
 
