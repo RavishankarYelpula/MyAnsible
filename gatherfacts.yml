@@ -1,15 +1,16 @@
 ---
-- hosts: all
+# - hosts: all
+- hosts: webservers
   become: yes
   tasks:
     - name: I want to install wget on only ubuntu nodes
       apt:
-        name: wget
-        state: absent
+        name: "{{webapponubuntu}}"
+        state: present
       when: ansible_os_family=="Debian"  
 
     - name: I want to install webserver on redhad nodes
       dnf:
-        name: httpd
+        name: "{{webapponamazon}}"
         state: present
       when: ansible_os_family=="RedHat"    
