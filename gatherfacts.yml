@@ -3,9 +3,9 @@
 - hosts: webservers
   become: yes
   tasks:
-    - name: I want to install "{{webapponubuntu}}" on only ubuntu nodes
+    - name: I want to install apache2 on only ubuntu nodes
       apt:
-        name: "{{webapponubuntu}}"
+        name: apache2 #"{{webapponubuntu}}"
         state: absent
         when: ansible_os_family=="Debian"
 
